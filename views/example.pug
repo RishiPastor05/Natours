@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        title Natours | #{tour}
+        //-interpolation using #
+        link(rel='stylesheet' href='css/style.css')
+        link(rel='shortcut icon' type='image/png' href='/img/favicon.png')
+    body
+        h1=tour
+        //-buffered code that output
+        h2=user.toUpperCase()
+        //h1 The Park Camper 
+        //-Comment but shown in HTML
+
+        - const x=9;
+        //-unbuffered code not output
+        h2=2*x
+        p This is text
